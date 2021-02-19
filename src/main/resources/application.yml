@@ -1,0 +1,33 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: springboot-demo
+  profiles:
+    active: dev
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+logging:
+  level:
+    com.zytech: info
+    org.springframework: warn
+management:
+  endpoints:
+    #暴露所有端点信息
+    enabled-by-default: true
+    web:
+      exposure:
+        #以web方式暴露
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+info:
+  appName: zytech
+  version: 1.0.0
+zytech:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
