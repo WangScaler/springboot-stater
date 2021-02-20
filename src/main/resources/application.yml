@@ -6,6 +6,9 @@ spring:
     name: springboot-demo
   profiles:
     active: dev
+  aop:
+    auto: true
+    proxy-target-class: true
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
 logging:

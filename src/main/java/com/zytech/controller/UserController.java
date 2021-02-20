@@ -1,6 +1,8 @@
 package com.zytech.controller;
 
 
+import com.zytech.common.annotation.Log;
+import com.zytech.common.annotation.Log;
 import com.zytech.common.lang.Result;
 import com.zytech.entity.User;
 import com.zytech.service.UserService;
@@ -41,6 +43,7 @@ public class UserController {
 
         return Result.succ(user);
     }
+    @Log("执行方法一")
     @RequiresAuthentication
     @RequiresRoles("admin")
     @PostMapping("/save")
