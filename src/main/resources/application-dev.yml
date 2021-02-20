@@ -60,16 +60,16 @@ spring:
         wall:
           config:
             multi-statement-allow: true
-#  redis:
-#    host: 192.168.1.77
-#    port: 6379
-#    jedis:
-#      pool:
-#        max-active: 8
-#        max-wait: -1
-#        max-idle: 500
-#        min-idle: 0
-#    client-type: jedis
+  redis:
+    host: 192.168.1.77
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+    client-type: jedis
 shiro-redis:
   enabled: true
   redis-manager:
