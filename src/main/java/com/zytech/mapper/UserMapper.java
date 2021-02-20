@@ -41,5 +41,7 @@ public interface UserMapper extends BaseMapper<User> {
      */
     @Select("select * from user where userName=#{userName} and password=#{password}")
     User findByUserNameAndPassword(@Param("userName") String userName, @Param("password") String password);
+
+    void saveUser(User user);
 }
 

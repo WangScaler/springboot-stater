@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zytech.mapper.UserMapper">
-
+    <insert id="saveUser" parameterType="com.zytech.entity.User" useGeneratedKeys="true" keyProperty="id">
+        insert into user(username,email,password,status,create_time)
+        values(#{username},#{email},#{password},#{status},#{create_time})
+    </insert>
 </mapper>

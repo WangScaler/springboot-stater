@@ -32,5 +32,7 @@ public interface UserService extends IService<User> {
      * @return
      */
     User findSimpleUserInfoByUserName(String userName);
+
+    void saveUser(User user);
 }
 

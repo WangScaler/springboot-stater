@@ -44,4 +44,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public User findSimpleUserInfoByUserName(String userName) {
         return userMapper.findByUserName(userName);
     }
+
+    @Override
+    public void saveUser(User user) {
+        userMapper.saveUser(user);
+    }
+
 }
