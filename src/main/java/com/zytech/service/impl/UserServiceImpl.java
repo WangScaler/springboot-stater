@@ -2,6 +2,7 @@ package com.zytech.service.impl;
 
 import com.zytech.entity.Role;
 import com.zytech.entity.User;
+import com.zytech.entity.UserRole;
 import com.zytech.mapper.RoleMapper;
 import com.zytech.mapper.UserMapper;
 import com.zytech.service.UserService;
@@ -16,7 +17,7 @@ import java.util.List;
  * 服务实现类
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 @Service
@@ -48,6 +49,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public void saveUser(User user) {
         userMapper.saveUser(user);
+    }
+
+    @Override
+    public void saveUserRole(UserRole userRole) {
+        userMapper.saveUserRole(userRole);
     }
 
 }

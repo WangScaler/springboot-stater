@@ -9,7 +9,7 @@ import com.zytech.entity.User;
  *  服务类
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 public interface SysLogService extends IService<SysLog> {

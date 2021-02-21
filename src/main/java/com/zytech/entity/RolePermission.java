@@ -4,8 +4,8 @@ import lombok.Data;
 
 /**
  * @Description：角色权限
- * @Author：chenyanbin
- * @Date：2021/1/2 11:44 下午
+ * @Author：WangScaler
+ * @Date：2021/02/19 11:44 下午
  * @Versiion：1.0
  */
 @Data

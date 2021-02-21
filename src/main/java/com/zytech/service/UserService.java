@@ -2,13 +2,14 @@ package com.zytech.service;
 
 import com.zytech.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zytech.entity.UserRole;
 
 /**
  * <p>
  *  服务类
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 public interface UserService extends IService<User> {
@@ -34,5 +35,7 @@ public interface UserService extends IService<User> {
     User findSimpleUserInfoByUserName(String userName);
 
     void saveUser(User user);
+
+    void saveUserRole(UserRole userRole);
 }
 

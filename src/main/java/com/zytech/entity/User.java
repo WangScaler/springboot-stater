@@ -19,7 +19,7 @@ import java.util.List;
  * 
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 @Data

@@ -10,8 +10,8 @@ import java.io.Serializable;
 
 /**
  * @Description：自定义SessionManager
- * @Author：chenyanbin
- * @Date：2021/1/3 4:54 下午
+ * @Author：WangScaler
+ * @Date：2021/02/19 4:54 下午
  * @Versiion：1.0
  */
 public class CustomSessionManager extends DefaultWebSessionManager {

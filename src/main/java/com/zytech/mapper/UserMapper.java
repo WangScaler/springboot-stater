@@ -2,6 +2,7 @@ package com.zytech.mapper;
 
 import com.zytech.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.zytech.entity.UserRole;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -10,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
  *  Mapper 接口
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 public interface UserMapper extends BaseMapper<User> {
@@ -43,5 +44,7 @@ public interface UserMapper extends BaseMapper<User> {
     User findByUserNameAndPassword(@Param("userName") String userName, @Param("password") String password);
 
     void saveUser(User user);
+
+    void saveUserRole(UserRole userRole);
 }
 

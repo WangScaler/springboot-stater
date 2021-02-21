@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
  *  Mapper 接口
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 public interface SysLogMapper extends BaseMapper<SysLog> {

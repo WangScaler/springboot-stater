@@ -5,4 +5,9 @@
         insert into user(username,email,password,status,create_time)
         values(#{username},#{email},#{password},#{status},#{create_time})
     </insert>
+    <insert id="saveUserRole" parameterType="com.zytech.entity.UserRole" useGeneratedKeys="true" keyProperty="id">
+        insert into user_role(role_id,user_id,remark)
+        values(#{roleId},#{userId},#{remark})
+    </insert>
+
 </mapper>

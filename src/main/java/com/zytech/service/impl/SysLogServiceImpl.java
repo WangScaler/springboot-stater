@@ -19,7 +19,7 @@ import java.util.List;
  * 服务实现类
  * </p>
  *
- * @author Wangscaler
+ * @author WangScaler
  * @since 2021-02-19
  */
 @Service

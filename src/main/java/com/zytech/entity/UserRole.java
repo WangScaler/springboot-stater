@@ -4,8 +4,8 @@ import lombok.Data;
 
 /**
  * @Description：用户角色
- * @Author：chenyanbin
- * @Date：2021/1/2 11:46 下午
+ * @Author：WangScaler
+ * @Date：2021/02/19 11:46 下午
  * @Versiion：1.0
  */
 @Data
@@ -21,7 +21,7 @@ public class UserRole {
     /**
      * 用户id
      */
-    private int userId;
+    private Long userId;
     /**
      * 备注
      */

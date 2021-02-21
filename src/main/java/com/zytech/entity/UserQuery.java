@@ -6,8 +6,8 @@ import java.io.Serializable;
 
 /**
  * @Description：接收用户名和密码
- * @Author：chenyanbin
- * @Date：2021/1/3 6:19 下午
+ * @Author：WangScaler
+ * @Date：2021/02/19 6:19 下午
  * @Versiion：1.0
  */
 @Data

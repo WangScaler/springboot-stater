@@ -1,6 +1,7 @@
 package com.zytech.controller;
 
 import cn.hutool.core.map.MapUtil;
+import cn.hutool.crypto.SecureUtil;
 import com.zytech.common.dto.LoginDto;
 import com.zytech.common.lang.Result;
 import com.zytech.entity.User;
@@ -34,12 +35,12 @@ public class AccountController {
         User user=userService.findAllUserInfoByUserName(loginDto.getUsername());
         Assert.notNull(user, "用户不存在");
 
-//        if(!user.getPassword().equals(SecureUtil.md5(loginDto.getPassword()))){
-//            return Result.fail("密码不正确");
-//        }
-        if(!user.getPassword().equals(loginDto.getPassword())){
+        if(!user.getPassword().equals(SecureUtil.md5(loginDto.getPassword()))){
             return Result.fail("密码不正确");
         }
+//        if(!user.getPassword().equals(loginDto.getPassword())){
+//            return Result.fail("密码不正确");
+//        }
         String jwt = jwtUtils.generateToken(user.getId());
 
         response.setHeader("Authorization", jwt);
